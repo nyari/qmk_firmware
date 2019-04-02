@@ -102,6 +102,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define USB_MAX_POWER_CONSUMPTION 500
 
+/*AUTO SHIFTING CONFIGURATION*/
+#define NO_AUTO_SHIFT_SPECIAL
+#define NO_AUTO_SHIFT_NUMERIC
+
 // RGB backlight
 #define DRIVER_ADDR_1 0b1110100
 #define DRIVER_ADDR_2 0b1110111
