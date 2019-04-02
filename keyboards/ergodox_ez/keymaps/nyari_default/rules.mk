@@ -1,3 +1,2 @@
 RGBLIGHT_ENABLE = no
 RGB_MATRIX_ENABLE = yes # enable later
-AUTO_SHIFT_ENABLE = yes
