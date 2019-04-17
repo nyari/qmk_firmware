@@ -24,12 +24,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------| Caps |           |Insert|------+------+------+------+------+--------|
  * | BkSp   |   A  |   S  |   D  |   F  |   G  |------|           |------|   H  |   J  |   K  |   L  |; / L2|' /  L4 |
  * |--------+------+------+------+------+------| Hyper|           | Meh  |------+------+------+------+------+--------|
- * | LShift |   Z  |   X  |   C  |   V  |   B  | Home |           | End  |   N  |   M  |   ,  |   .  |//Ctrl| RShift |
+ * | LShift |CtSh/Z|   X  |   C  |   V  |   B  | Home |           | End  |   N  |   M  |   ,  |   .  |//Ctrl| RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- * |Ctrl/Grv|'"/L3 | Alt  | Left | Right|                                       |  Up  | Down | Alt/[|   ]  | ~L1  |
+ * |Ctrl/Grv|'"/L4 | Alt  | Left | Right|                                       |  Up  | Down | Alt/[|   ]  | ~L1  |
  * `------------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | App  | LGui |       | Alt  |Ctrl/Esc|
+ *                                        | LGUI | App  |       | Alt  |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | Home |       | PgUp |        |      |
  *                                 | Space|Backsp|------|       |------|  Tab   |Enter |
@@ -41,9 +41,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_EQL,          KC_1,        KC_2,          KC_3,    KC_4,    KC_5,    KC_LEFT,
   KC_DELT,         KC_Q,        KC_W,          KC_E,    KC_R,    KC_T,    LT(SYMB, KC_CAPS),
   KC_BSPC,         KC_A,        KC_S,          KC_D,    KC_F,    KC_G,
-  KC_LSFT,         KC_Z,        KC_X,          KC_C,    KC_V,    KC_B,    ALL_T(KC_HOME),
+  KC_LSFT,         C_S_T(KC_Z),        KC_X,          KC_C,    KC_V,    KC_B,    ALL_T(KC_HOME),
   CTL_T(KC_GRV),   LT(CMDS, KC_QUOT),     KC_LALT, KC_LEFT, KC_RGHT,
-                                                           ALT_T(KC_APP), KC_LGUI,
+                                                           ALT_T(KC_LGUI), KC_APP,
                                                                           KC_HOME,
                                                          KC_SPC, KC_BSPC, KC_END,
   // right hand
