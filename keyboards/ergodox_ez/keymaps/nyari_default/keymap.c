@@ -29,11 +29,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |Ctrl/Grv|'"/L4 | Alt  | Left | Right|                                       |  Up  | Down |L2  /[|L4  /]| ~L1  |
  * `------------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,-------------.
- *                                        | LGUI | App  |       | Alt  |Ctrl/Esc|
+ *                                        | Pause| App  |       | Alt  |Ctrl/Esc|
  *                                 ,------|------|------|       |------+--------+------.
  *                                 |      |      | Home |       | PgUp |        |      |
- *                                 | Space|Backsp|------|       |------|  Tab   |Enter |
- *                                 |      |ace   | End  |       |PgDnL5|        |      |
+ *                                 | Space| LGUI |------|       |------|  Tab   |Enter |
+ *                                 |      |      | End  |       |PgDnL5|        |      |
  *                                 `--------------------'       `----------------------'
  */
 [BASE] = LAYOUT_ergodox(
@@ -43,9 +43,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_BSPC,         KC_A,        KC_S,          KC_D,    KC_F,    KC_G,
   KC_LSFT,         C_S_T(KC_Z),        KC_X,          KC_C,    KC_V,    KC_B,    ALL_T(KC_HOME),
   CTL_T(KC_GRV),   LT(CMDS, KC_QUOT),     KC_LALT, KC_LEFT, KC_RGHT,
-                                                           KC_LGUI, ALT_T(KC_APP),
+                                                           KC_PAUSE, ALT_T(KC_APP),
                                                                           KC_HOME,
-                                                         KC_SPC, KC_BSPC, KC_END,
+                                                         KC_SPC, KC_LGUI, KC_END,
   // right hand
   KC_RGHT,          KC_6,    KC_7,    KC_8,    KC_9,              KC_0,           KC_MINS,
   LT(SYMB, KC_INS), KC_Y,    KC_U,    KC_I,    KC_O,              KC_P,           LT(BHUN, KC_BSLS),
