@@ -69,6 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define LED_BRIGHTNESS_HI       255
 #endif
 #define LED_BRIGHTNESS_DEFAULT (LED_BRIGHTNESS_HI)
+#define RGBLIGHT_SLEEP
 
 /* ws2812 RGB LED */
 #define RGB_DI_PIN D7
